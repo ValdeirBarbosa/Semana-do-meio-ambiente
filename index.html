@@ -14,16 +14,16 @@
         .container {
             max-width: 600px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 10px;
             text-align: center;
         }
         header {
-            padding: 10px;
+            
             background-color: #1010EB;
         }
         h1 {
             color: #3C3C3C;
-            margin: 10px;
+            /* margin: 10px; */
         }
         p {
             color:#3C3C3C;
@@ -68,6 +68,19 @@
         }
         .hide-element{
             display: none;
+        }
+        footer{
+            height: 80px;
+            width: 100%;
+            background-color: #1e1e1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer::before{
+            content: "Powered by Valdeir Barbosa";
+            color:#726d6d;
+            justify-content: center;
         }
     </style>
 </head>
@@ -125,7 +138,9 @@
         </div>
            <iframe id ="form-survey" class="hide-element" width="640px" height="480px" src="https://forms.office.com/r/xuXPUXbM19?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
     </div>
-
+<footer>
+    
+</footer>
 
 
     <script>
