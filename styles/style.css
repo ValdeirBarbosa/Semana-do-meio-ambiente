@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    --webkit-font-smoothing:antialiased;
+    --moz-osx-font-smoothing:grayscale;
+
+}
+
+:root{
+    font-family: 'Roboto';
+    /* font-size: 62.5% */
+
+}
+header{
+    height: 20vh;
+    background-color: chocolate;
+    color:white;
+    text-shadow: 2px 2px 3px rgb(5, 99, 17);
+    margin-bottom: 0.4rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    background-image: url("../image.png");
+
+}
+.set-field{
+    display: flex;
+    justify-content: space-around;
+    gap:3rem;
+    padding:0 0.3em;
+}
+.set-field .field-set:nth-child(2){
+   max-width:250px;
+}
+.set-field .field-set:nth-child(1){
+   flex:3
+}
+
+.field-set{
+   flex:1;
+
+   height: 30px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap:1em;
+}
+.field-set input,
+.field-set button{
+    height: 35px;
+    border:none;
+    outline: none;
+
+}
+.field-set button{
+    padding:.3em;
+    border-radius: 0.4em;
+    background-color: rgba(5, 14, 90, 0.822);
+    color:white;
+    opacity: 0.9;
+    cursor: pointer;
+    width:6rem;
+}
+.field-set button:hover{
+    opacity: 1;
+  
+}
+.field-set input{
+    flex:3;
+    padding-left:5px;
+    background-color: rgba(188, 192, 192, 0.486);
+    border-radius: 0.4em;
+}
+#startSorteio{
+    background-color: rgba(14, 122, 41, 0.932);
+}
+table{
+    margin:10px;
+    padding: 0.3rem;
+ 
+    width:80vw;
+    margin:5vh auto;
+    border-collapse: collapse
+}
+thead{
+    background-color: black;
+    color:whitesmoke;
+    height: 40px;
+}
+thead tr:first-child{
+    background-color: cadetblue;
+    font-size: 28px;
+}
+table,tbody, thead{
+    
+    text-align: center;
+}
+tr, th{
+    height: 40px;
+}
+
+thead th:first-child,
+tbody tr:first-child{
+   max-width:10px;
+
+
+}
+thead th:last-child,
+tbody tr td:last-child{
+   max-width:10px;
+
+
+}
+
+
+tbody tr:nth-child(odd){
+    background-color: rgba(225, 232, 235, 0.664);
+}
+
+svg{
+    width:32px;
+    cursor: pointer;
+}
+
+.bin-icn:hover{
+    transform: scale(1.1);
+
+}
+
+
+td img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+img{
+    border:1px solid red;
+    width:22px;
+    height: 22px;
+    border-radius:100%
+}
+th svg{
+    width:22px;
+    height: 22px;
+   
+}
+
+
+tr td img{
+   background-color: blue;
+    width:32px;
+    height: 32px;
+    border-radius:100%
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  .celula{
+    color:rgb(55, 0, 255)
+
+  }
